@@ -1,5 +1,9 @@
-#Refer to http://interactivepython.org/runestone/static/pythonds/BasicDS/ImplementinganUnorderedListLinkedLists.html
-#With added functions of append(),index(),insert(),pop()
+"""
+Implement Unordered List, or linked list, in python.
+The building block is the class Node.
+Refer to http://interactivepython.org/runestone/static/pythonds/BasicDS/ImplementinganUnorderedListLinkedLists.html
+With added functions append(),index(),insert(),pop()
+"""
 
 class Node:
     def __init__(self,initdata):
