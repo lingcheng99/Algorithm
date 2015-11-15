@@ -19,13 +19,15 @@ class TreeNode(object):
 
 class Solution(object):
     def binaryTreePaths(self, root):
+        paths=[]
         if not root:
             return []
         if not root.left and not root.right:
             return [str(root.val)]
         if root.left:
-            treepaths=[str(root.val)+'->'+child for child in self.binaryTreePaths(root.left)]
+            paths+=[str(root.val)+'->'+child for child in self.binaryTreePaths(root.left)]
         if root.right:
-            treepaths+=[str(root.val)+'->'+child for child in self.binaryTreePaths(root.right)]
-        return treepaths
+            paths+=[str(root.val)+'->'+child for child in self.binaryTreePaths(root.right)]
+        return paths
+
         
